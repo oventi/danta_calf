@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <base href="{{&global.base_url}}" />
+
+    <link rel="icon" href="/assets/favicon.png">
+
+    <link rel="stylesheet" href="/css/index.css">
+    <script defer src="/js/index.js"></script>
+
+    <title>{{title}} | {{global.title}}</title>
+  </head>
+  <body class="home">
+    <h1>{{global.title}}</h1>
+
+    <div id="notifications"></div>
+
+    <main>
+    {{#entries}}
+      <article>
+        <a href="/{{slug}}">
+          <img src="{{thumbnail.url}}" alt="{{thumbnail.title}}">
+          <p>{{title}}</p>
+        </a>
+      </article>
+    {{/entries}}
+    </main>
+
+    {{> footer}}
+  </body>
+</html>

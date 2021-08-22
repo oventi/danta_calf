@@ -1,0 +1,91 @@
+/*
+ * use the main css file from the theme and add custom css
+ * you can overwrite existing rules or add new ones
+ * sass code: https://sass-lang.com/
+ */
+@use '../theme/css/index';
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #F9F6E1;
+}
+
+h1 {
+  padding: 1em;
+  background-color: #59A1A1;
+  color: #fff;
+  text-align: center;
+}
+
+article {
+  background-color: #C13859;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+}
+
+.home main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+
+  article {
+    width: 25%;
+    height: auto;
+  }
+}
+
+.entry {
+  article {
+    img { margin-bottom: 1em; }
+
+    font-size: 1.5em;
+
+    p.signed {
+      background: #fff url(../assets/writing.png) no-repeat;
+      background-size: 50px;
+      background-position: 200px;
+      width: 225px;
+      height: 50px;
+      line-height: 50px;
+      color: #C13859;
+      padding: 10px 20px;
+      font-size: 0.75em;
+    }
+
+    a.cta {
+      display: block;
+      background-color: #fff;
+      color: #C13859;
+      width: 200px;
+      margin: 0 auto;
+      padding: 1em;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.25em;
+      text-transform: uppercase;
+    }
+  }
+
+  .back_home {
+    background-color: #59A1A1;
+    color: #fff;
+  }
+}
+
+footer {
+  clear: both;
+  background-color: #59A1A1;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+}

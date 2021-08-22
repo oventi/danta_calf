@@ -1,0 +1,17 @@
+{
+  "name": "danta-calf",
+  "version": "0.0.1",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "dev": "danta --dev",
+    "build": "danta --build"
+  },
+  "dependencies": {
+    "danta": "https://github.com/oventi/danta#master"
+  },
+  "devDependencies": {
+    "@parcel/transformer-image": "2.0.0-rc.0",
+    "@parcel/transformer-sass": "2.0.0-rc.0"
+  }
+}

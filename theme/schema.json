@@ -1,0 +1,9 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://oventi.org/danta/theme.schema.json",
+	"title": "danta-calf",
+	"type": "object",
+	"required": [],
+	"properties": {}
+}
